@@ -1,167 +1,509 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  
+body {
+   padding: 0;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(138, 138, 138);
 }
 
-/* Header Section */
-.header {
+.wrapper {
+   margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.main-box {
+   background-color: rgb(249, 247, 247);
+}
+
+.top-section {
+   display: flex;
+   width: 100%;
+   height: 30%;
+   background-color: rgb(249, 247, 247);
+}
+
+.brand-logo {
+   width: 60%;
+}
+
+.office-info {
+   width: 40%;
+   text-align: center;
+}
+
+.hotline {
+   color: #7A0202;
+   font-size: 28px;
+   font-weight: 800;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   display: inline-block;
+   border-bottom: 5px solid #4A4A4A;
+   padding-bottom: 1px;
+   letter-spacing: 1px;
+}
+
+.contact-number {
+   font-size: 57px;
+   font-weight: 800;
+   color: #000;
+   margin: -20px 0;
+}
+
+.quick-reply {
+   font-size: 20.2px;
+   color: #4A4A4A;
+   letter-spacing: 0.9px;
+   font-weight: 800;
+   margin: 0;
+   padding: 10px;
+}
+
+.menu-bar {
+   width: 100%;
+   background: #600;
+}
+
+.menu-bar ul {
+   margin-top: 0px;
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   flex-wrap: wrap;
+}
+
+.menu-bar a {
+   color: #fff;
+   padding: 15px 20px;
+   display: block;
+   text-decoration: none;
+}
+
+.menu-bar a:hover {
+   background: rgb(105, 103, 103);
+}
+
+.content {
+   width: 95%;
+   display: flex;
+   margin: 2rem;
+}
+
+.left-panel {
+   width: 60%;
+   box-shadow: 0px 4px 8px 0px gray;
+   
+}
+
+.left-panel img {
+   margin-bottom: 0px;
+   padding: 0px;
+}
+
+.right-panel {
+   width: 51%;
+   background-image: url("./form_bg.jpg");
+   box-shadow: 0px 4px 8px 0px gray;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: white;
+   display: grid;
+}
+
+.info-box {
+   width: 100%;
+   display: flex;
+   gap: 5%;
+   margin: 0px;
+   padding: 0px;
+}
+
+.title-box {
+   width: 40%;
+   color: #fff;
+   font-weight: bold;
+   font-size: 25px;
+   display: block;
+   margin: 0px;
+   padding: 0px;
+}
+
+.title-box h3 {
+   background: rgb(146, 7, 7);
+   margin: 0px;
+   padding: 10px;
+}
+
+.sub-title {
+   width: 55%;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.sub-title p {
+   color: rgba(0, 0, 0, 1);
+   margin-bottom: -20px;
+   padding-bottom: 0px;
+}
+
+.sub-title span {
+   font-size: 25px;
+   color: rgb(8, 8, 78);
+   font-weight: bolder;
+}
+
+.note-text {
+   margin-top: 0px;
+   color: #1a1919;
+   font-size: 16px;
+   line-height: 25px;
+   margin-bottom: -10px;
+   margin-left: 30px;
+}
+
+.note-text span {
+   font-weight: bold;
+}
+
+form {
+   display: grid;
+}
+
+.form-wrapper {
+   margin-top: 0px;
+   width: 100%;
+   display: flex;
+}
+
+.input-holder {
+   width: 60%;
+   justify-content: center;
+   align-items: center;
+   display: grid;
+}
+
+.field-box {
+   display: flex;
+}
+
+.field-box label {
+   font-size: 15px;
+   margin-left: 25px;
+   font-weight: bold;
+   color: #1a1919;
+}
+
+.field {
+   width: 50%;
+}
+
+.label {
+   width: 32%;
+}
+
+.right-panel form input {
+   margin-bottom: 10px;
+   padding: 8px;
+   border: 1px solid #6e6565;
+}
+
+.side-image {
+   transform: rotate(20deg);
+   margin-right: 40px;
+   margin-top: 30px;
+   margin-left: 50px;
+}
+
+form .msg-box {
+   margin-left: 30px;
+}
+
+form .msg-box textarea {
+   width: 85%;
+   margin-top: 0px;
+   margin-bottom: 10px;
+   padding: 20px;
+   font-size: 15px;
+   resize: none;
+   color: #222020;
+   font-weight: bold;
+   border: 1px solid #6e6565;
+}
+
+.form-footer {
+   display: flex;
+   gap: 15px;
+}
+
+.form-footer p {
+   margin-left: 20px;
+   color: #4A4A4A;
+   font-style: italic;
+   font-size: 13px;
+}
+
+.action-btn {
+   background: #900;
+   color: #fff;
+   width: 270px;
+   font-size: 18px;
+   height: 40px;
+   padding: 10px 20px;
+   text-decoration: none;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+.action-btn img {
+   float: right;
+}
+
+
+
+/* Card container */
+.dui-card {
+  width: 360px;                 /* card width like the screenshot */
+  background: #ffffff;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px;
+  border-radius: 3px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  position: relative; 
+  left: 30px;
+
+}
+
+/* Left text block */
+.dui-text {
+  flex: 1;
+}
+
+/* Main heading (separate class) */
+.dui-heading-main {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* Highlight inside heading (red 'DUI?') */
+.dui-heading-highlight {
+  color: #8b1b1b;   /* reddish color */
+}
+
+/* Subheading (separate class) */
+.dui-subheading {
+  color: #b81919;          /* red */
+  font-size: 13px;
+  font-weight: 800;
+  margin: 6px 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Paragraphs (separate classes) */
+.dui-paragraph-1,
+.dui-paragraph-2 {
+  color: #333;
+  font-size: 17px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+/* slightly less bottom space for final paragraph */
+.dui-paragraph-2 {
+  margin-bottom: 14px;
+}
+
+.dui-cta-row {
+  display: flex;
+  flex-direction: column; /* stack image above button */
+  align-items: center;
+  gap: 10px; /* spacing between image & button */
+}
+
+.dui-hr {
+  width: 100%; /* make shadow span container */
+  max-width: 300px; /* optional, limit max width */
+}
+
+.dui-cta {
+  display: inline-block;
+  text-align: center;
+  background: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px; /* controls button size */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 200px; /* increase width to keep text on one line */
+}
+
+
+/* hr-shadow image styling */
+.dui-hr {
+  width: 250px;      /* matches screenshot proportion */
+  height: auto;
+  display: block;
+  position: relative;
+  left: 100px;
+}
+
+/* CTA button */
+.dui-cta {
+  background: linear-gradient(#c31b1b, #8b0f0f);
+  width: 110px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 16px;
+  border-radius: 2px;
+  font-size: 13px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.18);
+  display: inline-block;
+  position: relative;
+  left: 98px;
+}
+
+/* white arrow on the right of CTA (pure CSS) */
+.dui-cta::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #fff;
+}
+
+/* Right image block */
+.dui-image img {
+  width: 80px;  /* approximate size as in screenshot */
+  height: auto;
+  display: block;
+  
+  position: relative;
+  bottom : -65px;
+  left: -50px;
+}
+
+ 
+
+
+/* Responsive: stack on small screens */
+@media (max-width: 420px) {
+  .dui-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dui-cta-row { justify-content: flex-start; }
+  .dui-hr { width: 120px; }
+  .dui-image { align-self: center; margin-top: 8px; }
+}
+
+.law-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+  background: #ffffff;
+  position: relative;
+  top: -52px;
+  left: 13px;
+}
+
+.law-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: -5px 40px;
-  
+  gap: 20px;
 }
 
-.logo img {
- 
-  width: 800px;
-
+.law-top {
+  flex: 1;
 }
 
-.contact-info {
-  text-align: right;
-  margin-right: 27px;
-  
-
-  
-  
-}
-
-.contact-info p:first-child {
+/* Heading base */
+.law-heading {
+  font-size: 20px;
   font-weight: bold;
-  color: #900;
-  font-size: 27px;
-  margin-bottom: 5px;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #000; /* Black line below */
-  display: inline-block; /* Makes border fit text width */
+  margin-bottom: 8px;
 }
 
+/* Colors */
+.law-text, .case-text {
+  color: #000; /* black */
+}
 
-.contact-info .phone {
-  font-size: 55px;
-  font-weight: bold;
+.blog-text, .results-text {
+  color: #cc0000; /* red */
   
-  color: #333;
 }
 
-.contact-info p:last-child {
-  font-size: 22px;
-  color: #666;
+.law-paragraph {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
 }
 
-/* Navigation */
-.navbar {
-  background: maroon;
-  display: flex;
-  justify-content: center;
+.law-cta-row {
+  position: relative;
+  display: inline-block;
 }
 
-.navbar a {
+.law-cta {
+  background: linear-gradient(#c31b1b, #8b0f0f);
+  width: 117px;
   color: #fff;
   text-decoration: none;
-  padding: 12px 20px;
-  font-size: 19px;
-  transition: background 0.3s;
-  transform: translate(274px , 0px);
-}
-
-.navbar a:hover {
-  background: gray;
-}
-
-
-
-
-.main-section {
-  display: flex;
-  width: 100%;
-  max-width: 1300px;
-  margin: 30px auto;
-  
-  
+  font-weight: 800;
+  padding: 10px 16px;
+  border-radius: 2px;
+  font-size: 13px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.18);
+  display: inline-block;
+  position: relative;
+  left: 10px;
   
 }
 
-/* Left Section */
-.left-section {
+.law-cta::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #fff;
+}
+
+
+.law-hr {
+  position: absolute;
+  
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  z-index: 1;
+}
+
+.law-bottom {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  text-align: right;
 }
 
-.left-section img {
-  width: 100%;
+.law-image {
+  max-width: 220px;
   height: auto;
-  margin-right: 20px;
+  position: relative;
+  left: 4px;
 }
-/* Right Section */
-.right-section {
-  flex: 1;
-  background: url('./form_bg.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  
-}
-  .form-container {
-  position: absolute;  
-  top: 260px;           
-  left: 676px; 
-  background: maroon;
-  padding: 25px;
-  width: 100%;
-  max-width: 210px;
-  height: 50px;
-  border-radius: 5px;
-  
-}
-.form-container h2 {
-  color: white;
-  font-size: 30px;
-  margin-bottom: 10px;
-  margin-top: -20px;
-  margin-left: -20px;
-}
-
-.form-container p {
-  font-size: 18px;
-  color: black;
-  margin-top: -45px;
-  line-height: 1.4;
-  transform: translate(220px , 10px);
-  
-  
-}
-
-.form-container p strong {
-  font-weight: bold;
-  
-}
-
-.form-container p span {
-  color: blue;  
-  font-style: italic;
-  font-size: 22px;
-}
-
-.form-container .info-text {
-  font-size: 18px;
-  color: black;        
-  line-height: 1.4;
-  margin-top: 15px;
-  text-align: left;
-  max-width: 200px;     
-  word-wrap: break-word; 
-}
-
-
-
-
-
