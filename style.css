@@ -458,6 +458,8 @@ form .msg-box textarea {
 
 .blog-box .law-image {
    max-width: 200px;
+   position: relative;
+   left: -30px;
 }
 
 .case-cta {
@@ -471,6 +473,8 @@ form .msg-box textarea {
 .case-box .law-image {
    max-width: 240px;
    margin-top: 10px;
+   position: relative;
+   left: -30px;
 
 }
 
@@ -486,6 +490,8 @@ form .msg-box textarea {
    justify-content: center;
    gap: 10px;
    margin-bottom: 15px;
+   position: relative;
+   left: -70px;
 }
 
 .avo-rating-large {
@@ -500,6 +506,8 @@ form .msg-box textarea {
    font-size: 20px;
    font-weight: bold;
    margin-bottom: 8px;
+   position: relative;
+   left: -115px;
    
    
 }
@@ -513,10 +521,12 @@ form .msg-box textarea {
 }
 
 .cert-paragraph {
-   font-size: 14px;
+   font-size: 18px;
    color: #555;
    margin-bottom: 12px;
-   line-height: 1.5;
+   line-height: 1.4;
+   position: relative;
+   left: -70px;
 }
 
 .cert-shadow {
